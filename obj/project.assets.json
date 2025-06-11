@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\disrct\\NIMGAME\\NIMGAME.csproj",
+      "projectUniqueName": "C:\\Users\\disrct\\Desktop\\NIMGAME\\NIMGAME.csproj",
       "projectName": "NIMGAME",
-      "projectPath": "C:\\Users\\disrct\\NIMGAME\\NIMGAME.csproj",
+      "projectPath": "C:\\Users\\disrct\\Desktop\\NIMGAME\\NIMGAME.csproj",
       "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\disrct\\NIMGAME\\obj\\",
+      "outputPath": "C:\\Users\\disrct\\Desktop\\NIMGAME\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,6 +26,7 @@
         "net9.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
