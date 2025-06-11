@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NIMGAME</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icone.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <img id="logo" src="logo.png" alt="Logo" />
+    <!-- user-info inicialmente escondido -->
+    <div id="user-info" class="hidden" onclick="toggleUserMenu()">
+      <img src="user-icon.png" alt="Usuário" style="width:24px;vertical-align:middle;" />
+      <div id="user-menu" class="hidden">
+        <button onclick="logout()">Sair</button>
+        <button onclick="changeName()">Mudar Nome</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section id="auth">
+      <h2>Bem-vindo ao Jogo NIM</h2>
+      <button onclick="showRegister()">Cadastrar</button>
+      <button onclick="showLogin()">Entrar</button>
+    </section>
+
+    <section id="register" class="hidden">
+      <h2>Cadastro</h2>
+      <input type="text" id="reg-name" placeholder="Nome" />
+      <input type="email" id="reg-email" placeholder="Email" />
+      <input type="password" id="reg-pass" placeholder="Senha" />
+      <button onclick="register()">Cadastrar</button>
+    </section>
+
+    <section id="login" class="hidden">
+      <h2>Login</h2>
+      <input type="email" id="log-email" placeholder="Email" />
+      <input type="password" id="log-pass" placeholder="Senha" />
+      <button onclick="login()">Entrar</button>
+    </section>
+
+    <section id="instructions" class="hidden">
+      <h2>Regras do Jogo</h2>
+      <p>
+        O jogo NIM é um jogo de estratégia. Cada jogador remove 1 ou mais
+        bolinhas de uma linha. Quem tirar o último bolinha perde.
+      </p>
+      <button onclick="showDifficulties()">Entendi</button>
+    </section>
+
+    <section id="difficulty" class="hidden">
+      <h2>Escolha a Dificuldade</h2>
+      <button onclick="startGame('easy', 'bee')">Fácil</button>
+      <button onclick="startGame('medium', 'bee')">Médio</button>
+      <button onclick="startGame('hard', 'bee')">Difícil</button>
+    </section>
+
+    <section id="game" class="hidden">
+      <h2>Jogo NIM</h2>
+      <div id="board"></div>
+      <button onclick="confirmSelection()">Confirmar Jogada</button>
+      <button onclick="restartGame()">Jogar Novamente</button>
+      <button onclick="exitToMenu()">Sair</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
