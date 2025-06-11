@@ -1,5 +1,5 @@
 namespace NimGameAPI.Models;
-
+// TESTE DE COMMIT
 public class Game
 {
     public int GameId { get; set; }             // identificador único do jogo
