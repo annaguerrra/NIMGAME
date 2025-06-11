@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\disrct\\Desktop\\NIMGAME\\NIMGAME.csproj": {}
+    "C:\\Users\\disrct\\Desktop\\NIMGAME\\NimGameAPI\\NimGameAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\disrct\\Desktop\\NIMGAME\\NIMGAME.csproj": {
+    "C:\\Users\\disrct\\Desktop\\NIMGAME\\NimGameAPI\\NimGameAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\disrct\\Desktop\\NIMGAME\\NIMGAME.csproj",
-        "projectName": "NIMGAME",
-        "projectPath": "C:\\Users\\disrct\\Desktop\\NIMGAME\\NIMGAME.csproj",
+        "projectUniqueName": "C:\\Users\\disrct\\Desktop\\NIMGAME\\NimGameAPI\\NimGameAPI.csproj",
+        "projectName": "NimGameAPI",
+        "projectPath": "C:\\Users\\disrct\\Desktop\\NIMGAME\\NimGameAPI\\NimGameAPI.csproj",
         "packagesPath": "C:\\Users\\disrct\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\disrct\\Desktop\\NIMGAME\\obj\\",
+        "outputPath": "C:\\Users\\disrct\\Desktop\\NIMGAME\\NimGameAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\disrct\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -55,6 +61,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
