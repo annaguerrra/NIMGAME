@@ -1,0 +1,13 @@
+O QUE CADA COISA FAZ:
+1. Controllers/ JogosController.cs
+    - Esse arquivo é o portão de entrada do jogo via internet. Ele recebe requisições como:
+    “Começar um novo jogo”
+    “Fazer uma jogada”
+    “Buscar o status do jogo”
+    Os controllers são responsáveis por lidar com requisições HTTP que vêm do navegador ou do frontend (tipo um botão “Jogar”).
+
+2. Models
+    -  Define as entidades Jogo e Movimento.
+
+3. Services 
+    - Contém a lógica principal (Ex.: Regras do Jogo)
